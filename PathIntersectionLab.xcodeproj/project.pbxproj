@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BECEC4981791767100111B29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECEC4971791767100111B29 /* Cocoa.framework */; };
+		BECEC4A21791767100111B29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BECEC4A01791767100111B29 /* InfoPlist.strings */; };
+		BECEC4A41791767100111B29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEC4A31791767100111B29 /* main.m */; };
+		BECEC4A81791767100111B29 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BECEC4A61791767100111B29 /* Credits.rtf */; };
+		BECEC4AB1791767100111B29 /* PILAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEC4AA1791767100111B29 /* PILAppDelegate.m */; };
+		BECEC4AE1791767200111B29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECEC4AC1791767200111B29 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BECEC4941791767100111B29 /* PathIntersectionLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathIntersectionLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECEC4971791767100111B29 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BECEC49A1791767100111B29 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BECEC49B1791767100111B29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BECEC49C1791767100111B29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BECEC49F1791767100111B29 /* PathIntersectionLab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PathIntersectionLab-Info.plist"; sourceTree = "<group>"; };
+		BECEC4A11791767100111B29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BECEC4A31791767100111B29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BECEC4A51791767100111B29 /* PathIntersectionLab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PathIntersectionLab-Prefix.pch"; sourceTree = "<group>"; };
+		BECEC4A71791767100111B29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BECEC4A91791767100111B29 /* PILAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PILAppDelegate.h; sourceTree = "<group>"; };
+		BECEC4AA1791767100111B29 /* PILAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PILAppDelegate.m; sourceTree = "<group>"; };
+		BECEC4AD1791767200111B29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BECEC4911791767100111B29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECEC4981791767100111B29 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BECEC48B1791767100111B29 = {
+			isa = PBXGroup;
+			children = (
+				BECEC49D1791767100111B29 /* PathIntersectionLab */,
+				BECEC4961791767100111B29 /* Frameworks */,
+				BECEC4951791767100111B29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BECEC4951791767100111B29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BECEC4941791767100111B29 /* PathIntersectionLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BECEC4961791767100111B29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BECEC4971791767100111B29 /* Cocoa.framework */,
+				BECEC4991791767100111B29 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BECEC4991791767100111B29 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BECEC49A1791767100111B29 /* AppKit.framework */,
+				BECEC49B1791767100111B29 /* CoreData.framework */,
+				BECEC49C1791767100111B29 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BECEC49D1791767100111B29 /* PathIntersectionLab */ = {
+			isa = PBXGroup;
+			children = (
+				BECEC4A91791767100111B29 /* PILAppDelegate.h */,
+				BECEC4AA1791767100111B29 /* PILAppDelegate.m */,
+				BECEC4AC1791767200111B29 /* MainMenu.xib */,
+				BECEC49E1791767100111B29 /* Supporting Files */,
+			);
+			path = PathIntersectionLab;
+			sourceTree = "<group>";
+		};
+		BECEC49E1791767100111B29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BECEC49F1791767100111B29 /* PathIntersectionLab-Info.plist */,
+				BECEC4A01791767100111B29 /* InfoPlist.strings */,
+				BECEC4A31791767100111B29 /* main.m */,
+				BECEC4A51791767100111B29 /* PathIntersectionLab-Prefix.pch */,
+				BECEC4A61791767100111B29 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BECEC4931791767100111B29 /* PathIntersectionLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BECEC4B11791767200111B29 /* Build configuration list for PBXNativeTarget "PathIntersectionLab" */;
+			buildPhases = (
+				BECEC4901791767100111B29 /* Sources */,
+				BECEC4911791767100111B29 /* Frameworks */,
+				BECEC4921791767100111B29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PathIntersectionLab;
+			productName = PathIntersectionLab;
+			productReference = BECEC4941791767100111B29 /* PathIntersectionLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BECEC48C1791767100111B29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PIL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MooseFactory;
+			};
+			buildConfigurationList = BECEC48F1791767100111B29 /* Build configuration list for PBXProject "PathIntersectionLab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BECEC48B1791767100111B29;
+			productRefGroup = BECEC4951791767100111B29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BECEC4931791767100111B29 /* PathIntersectionLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BECEC4921791767100111B29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECEC4A21791767100111B29 /* InfoPlist.strings in Resources */,
+				BECEC4A81791767100111B29 /* Credits.rtf in Resources */,
+				BECEC4AE1791767200111B29 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BECEC4901791767100111B29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECEC4A41791767100111B29 /* main.m in Sources */,
+				BECEC4AB1791767100111B29 /* PILAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BECEC4A01791767100111B29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BECEC4A11791767100111B29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BECEC4A61791767100111B29 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BECEC4A71791767100111B29 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BECEC4AC1791767200111B29 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BECEC4AD1791767200111B29 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BECEC4AF1791767200111B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BECEC4B01791767200111B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BECEC4B21791767200111B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PathIntersectionLab/PathIntersectionLab-Prefix.pch";
+				INFOPLIST_FILE = "PathIntersectionLab/PathIntersectionLab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BECEC4B31791767200111B29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PathIntersectionLab/PathIntersectionLab-Prefix.pch";
+				INFOPLIST_FILE = "PathIntersectionLab/PathIntersectionLab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BECEC48F1791767100111B29 /* Build configuration list for PBXProject "PathIntersectionLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECEC4AF1791767200111B29 /* Debug */,
+				BECEC4B01791767200111B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BECEC4B11791767200111B29 /* Build configuration list for PBXNativeTarget "PathIntersectionLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECEC4B21791767200111B29 /* Debug */,
+				BECEC4B31791767200111B29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BECEC48C1791767100111B29 /* Project object */;
+}
