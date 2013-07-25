@@ -13,6 +13,9 @@
 		BECEC4A81791767100111B29 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BECEC4A61791767100111B29 /* Credits.rtf */; };
 		BECEC4AB1791767100111B29 /* PILAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEC4AA1791767100111B29 /* PILAppDelegate.m */; };
 		BECEC4AE1791767200111B29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECEC4AC1791767200111B29 /* MainMenu.xib */; };
+		BECEC4B61791769A00111B29 /* PathIntersectionLabView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEC4B51791769A00111B29 /* PathIntersectionLabView.m */; };
+		BEDCEB3917A1C33D004848D3 /* Intersects.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDCEB3817A1C33D004848D3 /* Intersects.png */; };
+		BEDCEB6217A1CC29004848D3 /* libMoofBezierLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDCEB6117A1CC29004848D3 /* libMoofBezierLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,10 @@
 		BECEC4A91791767100111B29 /* PILAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PILAppDelegate.h; sourceTree = "<group>"; };
 		BECEC4AA1791767100111B29 /* PILAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PILAppDelegate.m; sourceTree = "<group>"; };
 		BECEC4AD1791767200111B29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BECEC4B41791769A00111B29 /* PathIntersectionLabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathIntersectionLabView.h; sourceTree = "<group>"; };
+		BECEC4B51791769A00111B29 /* PathIntersectionLabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathIntersectionLabView.m; sourceTree = "<group>"; };
+		BEDCEB3817A1C33D004848D3 /* Intersects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intersects.png; sourceTree = "<group>"; };
+		BEDCEB6117A1CC29004848D3 /* libMoofBezierLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMoofBezierLibrary.a; path = "../../../../../../../Builds/MoofBezierLibrary-bhhyyjduwinoudgxyvtqeczuqfof/Build/Products/Debug/libMoofBezierLibrary.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDCEB6217A1CC29004848D3 /* libMoofBezierLibrary.a in Frameworks */,
 				BECEC4981791767100111B29 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +54,7 @@
 		BECEC48B1791767100111B29 = {
 			isa = PBXGroup;
 			children = (
+				BEDCEB6117A1CC29004848D3 /* libMoofBezierLibrary.a */,
 				BECEC49D1791767100111B29 /* PathIntersectionLab */,
 				BECEC4961791767100111B29 /* Frameworks */,
 				BECEC4951791767100111B29 /* Products */,
@@ -82,9 +91,12 @@
 		BECEC49D1791767100111B29 /* PathIntersectionLab */ = {
 			isa = PBXGroup;
 			children = (
+				BEDCEB3817A1C33D004848D3 /* Intersects.png */,
 				BECEC4A91791767100111B29 /* PILAppDelegate.h */,
 				BECEC4AA1791767100111B29 /* PILAppDelegate.m */,
 				BECEC4AC1791767200111B29 /* MainMenu.xib */,
+				BECEC4B41791769A00111B29 /* PathIntersectionLabView.h */,
+				BECEC4B51791769A00111B29 /* PathIntersectionLabView.m */,
 				BECEC49E1791767100111B29 /* Supporting Files */,
 			);
 			path = PathIntersectionLab;
@@ -157,6 +169,7 @@
 				BECEC4A21791767100111B29 /* InfoPlist.strings in Resources */,
 				BECEC4A81791767100111B29 /* Credits.rtf in Resources */,
 				BECEC4AE1791767200111B29 /* MainMenu.xib in Resources */,
+				BEDCEB3917A1C33D004848D3 /* Intersects.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +182,7 @@
 			files = (
 				BECEC4A41791767100111B29 /* main.m in Sources */,
 				BECEC4AB1791767100111B29 /* PILAppDelegate.m in Sources */,
+				BECEC4B61791769A00111B29 /* PathIntersectionLabView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +279,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathIntersectionLab/PathIntersectionLab-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../MCE Library/MCE Library\"/**",
+				);
 				INFOPLIST_FILE = "PathIntersectionLab/PathIntersectionLab-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../../Builds/Games_Lab-fwojptihcutnodelxrfcisuoryhn/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../../../../../Builds/MoofBezierLibrary-bhhyyjduwinoudgxyvtqeczuqfof/Build/Products/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -277,7 +299,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PathIntersectionLab/PathIntersectionLab-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../MCE Library/MCE Library\"/**",
+				);
 				INFOPLIST_FILE = "PathIntersectionLab/PathIntersectionLab-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../../Builds/Games_Lab-fwojptihcutnodelxrfcisuoryhn/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../../../../../Builds/MoofBezierLibrary-bhhyyjduwinoudgxyvtqeczuqfof/Build/Products/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -302,6 +332,7 @@
 				BECEC4B31791767200111B29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
