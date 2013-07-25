@@ -1,5 +1,5 @@
 //
-//  PILAppDelegate.h
+//  PathIntersectionLabView.h
 //  PathIntersectionLab
 /*
  
@@ -30,8 +30,23 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PILAppDelegate : NSObject <NSApplicationDelegate>
+@class PathIntersectionLabView;
+@class MFBezierPathCollider;
 
-@property (assign) IBOutlet NSWindow *window;
+@interface PathIntersectionLabView : NSView
+{
+    CGPathRef path1;
+    CGPathRef path2;
+    
+    IBOutlet NSImageView* intersectsImage;
+    
+    IBOutlet NSButton*  eoRuleBox;
+    
+    IBOutlet PathIntersectionLabView*   resultView;
+
+    MFBezierPathCollider*   pathCollider;
+}
+
+-(IBAction)roll:(id)sender;
 
 @end
